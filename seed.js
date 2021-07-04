@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-  "mongodb://127.0.0.1:27017/dbvilla",
+  "mongodb+srv://aegon:divel213@cluster0.78chn.mongodb.net/db_mosanvilla?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
