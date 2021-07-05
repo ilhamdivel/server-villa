@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-  "mongodb+srv://aegon:divel213@cluster0.78chn.mongodb.net/db_mosanvilla?retryWrites=true&w=majority",
+  "mongodb+srv://aegon:divel213@cluster0.78chn.mongodb.net/db_villa?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -534,8 +534,8 @@ var data = [
     documents: [
       {
         _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903345"),
-        username: "ilham",
-        password: "divel213",
+        username: "admin",
+        password: "rahasia",
       },
     ],
   },

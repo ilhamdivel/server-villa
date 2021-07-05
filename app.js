@@ -6,10 +6,10 @@ var logger = require("morgan");
 const methodOverride = require("method-override");
 const session = require("express-session");
 const flash = require("connect-flash");
-//import mongoose
+// import mongoose
 const mongoose = require("mongoose");
 mongoose.connect(
-  "mongodb+srv://aegon:divel213@cluster0.78chn.mongodb.net/db_mosanvilla`?retryWrites=true&w=majority",
+  "mongodb+srv://aegon:divel213@cluster0.78chn.mongodb.net/db_villa?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -51,7 +51,7 @@ app.use(
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-//admin
+// admin
 app.use("/admin", adminRouter);
 app.use("/api/v1/member", apiRouter);
 
